@@ -1,13 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&display=swap');
+
+:root {
+  --greenColor: #00f991;
+  --greenColorSoft: #c0fde4;
+  --redTextColor: #df2047;
+  --secondaryTextColor: #5e5e5e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Roboto Serif', serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.rightBlackBox {
+  min-height: 500px;
+  height: 100%;
+  background-color: black;
+  border-radius: 10px
+}
+
+.leftBox {
+  height: 500px;
+
+}
+
+.innerRBB {
+  width: 100%;
+  min-height: 500px;
+  position: relative;
+}
+
+.text-green {
+  color: var(--greenColor);
+}
+
+.btn-green {
+  background-color: var(--greenColor) !important;
+  color: black !important;
+}
+
+.redText {
+  color: var(--redTextColor);
+}
+
+.comingSoon {
+  font-size: 12px;
+}
+
+.suite {
+  letter-spacing: -1px;
+}
+
+.cstmPara {
+  color: var(--secondaryTextColor);
+  line-height: normal;
+}
+
+.cstmPara2 {
+  color: black;
+  line-height: normal;
+}
+
+.carouselCards {
+  height: 350px;
+  background-color: black;
+
+}
+
+.cstmH1Tag {
+  position: relative;
+}
+
+.btn-greenIsColor {
+  background-color: var(--greenColorSoft) !important;
+}
+
+.borderMy {
+  border: 1px solid yellow;
+}
+
+.carouselItem {
+  height: 300px;
+  color: white;
+  background-color: black;
+}
+
+.inheritHeight {
+  height: 100%;
+}
+
+.width95 {
+  width: 95%;
+}
+
+.secondaryTextColor {
+  color: var(--secondaryTextColor) !important;
+}
+
+.redTextColor {
+  color: var(--redTextColor);
+}
+
+.circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.greenDot {
+  background-color: #008e4f;
+}
+
+.orangeDot {
+  background-color: #ff9103;
+}
+
+.blueDot {
+  background-color: #0393fd;
+}
+
+.pinkDot {
+  background-color: #fc2d93;
+}
+
+.darkBlueDot {
+  background-color: #011592;
+}
+
+.parrotDot {
+  background-color: #8af800;
+}
+
+.lightBlueDot {
+  background-color: #75d4fe;
+}
+
+.circleLine {
+  height: 100px;
+  width: 2px;
+  background-color: black;
+}
+
+#footerSection {
+  background-color: black;
+  color: white;
+}
+
+.Typewriter__wrapper {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.Typewriter {
+  text-align: center;
+}
+
+.outerTypewriter {
+  height: 40%;
+  padding: 0px 40px;
+}
+
+.formBoxes {
+  background: #343434;
+  border-radius: 10px;
+  padding: 15px 25px;
+  color: #d6d6d6;
+  font-weight: 500;
+}
+
+.noOutlineBorder {
+  border: none;
+  outline: none;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.formParent {
+  position: relative;
+}
+
+.close-icon {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  color: var(--greenColorSoft);
+  font-size: 30px;
+  border: none;
+}
+
+.formMsg {
+  font-size: 11px;
+  color: var(--secondaryTextColor);
+  margin: 0;
+  text-align: center;
+}
+
+.logoImg {
+  width: 300px;
+}
+
+.nudgeImg {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin: 0px 15px;
+}
+
+.width70 {
+  width: 70%;
+}
+
+.numbering {
+  display: flex;
+  width: 45px;
+  height: 45px;
+  /* background-color: black; */
+  border-radius: 50%;
+  color: white;
+  margin-left: 10px;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.numbering.numbering-1 {
+  background-color: #945200;
+}
+
+.numbering.numbering-2 {
+  background-color: #009193;
+}
+
+.numbering.numbering-3 {
+  background-color: #531b93;
+}
+
+.numbering.numbering-4 {
+  background-color: #929000;
+}
+
+.numbering.numbering-5 {
+  background-color: #008f00;
+}
+
+.numbering.numbering-6 {
+  background-color: #941751;
+}
+
+
+
+.cstmDeliverImg {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+}
+
+.cstmLineHeight {
+  line-height: normal;
+}
+
+.cstmHrTag {
+  border-top: 5px solid #b7b7b7;
+  width: 40%;
+  border-radius: 10px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.thanks {
+  color: #7fa1b6;
+}
+
+.spanGreen {
+  color: var(--greenColor);
+}
+
+.carousel-inner {
+  border-radius: 40px;
+  width: 90% !important;
+}
+
+.socialMediaIcons {
+  background: white;
+  border-radius: 50%;
+  height: 35px !important;
+  width: 35px !important;
+  padding: 3px;
+  margin: 0px 4px;
+}
+
+.roundImg {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.roundImg1 {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
+
+.behaExperImages {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.brownTextColor {
+  color: #945200;
+}
+
+.seaTextColor {
+  color: #005493;
+}
+
+.seaGreenTextColor {
+  color: #009193;
+}
+
+.seablueTextColor {
+  color: #011993;
+}
+
+.yellowBrownTextColor {
+  color: #929000;
+}
+
+.yellowGreenTextColor {
+  color: #008f00;
+}
+
+.aquaComingSoon::before {
+  content: "Coming Soon";
+  font-size: 10px;
+  color: var(--redTextColor);
+  position: absolute;
+  top: -10px;
+  left: 130px;
+}
+
+.followupSoon::before {
+  content: "Coming Soon";
+  font-size: 10px;
+  color: var(--redTextColor);
+  position: absolute;
+  top: -10px;
+  left: 110px;
+}
+
+.spinner-border {
+  width: 22px !important;
+  height: 22px !important;
+  border-width: 4px !important;
+}
+
+.error {
+  color: #b15252 !important;
+  font-size: 12px;
+}
+
+@media (max-width:768px) {
+  .width95 {
+    width: 100%;
+  }
+
+  .formBoxes {
+    padding: 10px;
+  }
+
+  .logoImg {
+    width: 240px;
+  }
+
+  .nudgeImg {
+    width: 70px;
+    height: 100%;
+  }
+
+  .carousel-inner {
+    border-radius: 20px;
+    width: 100% !important;
+  }
+
+  .cstmDeliverImg {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+  }
+
+  .leftBox {
+    height: 400px;
+  }
+
 }
